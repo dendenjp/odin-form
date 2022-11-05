@@ -36,6 +36,7 @@ html {
 
 .logo-header {
     margin-top: 20rem;
+    width: 100%;
 
     background-color: rgba(0, 0, 0, 0.4);
     font-family: 'odin';
@@ -52,19 +53,163 @@ html {
 }
 
 .product-banner {
-    position: relative;
+    /* position: relative; */
     height: 100vh;
     width: auto;
 
     background-image: url(img/halie-west-25xggax4bSA-unsplash.jpg);
     background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .credit {
-    position: absolute;
+    /* position: absolute;
     bottom: 1rem;
-    left: 20rem;
+    left: 20rem; */
+
+    margin-bottom: 1.5rem;
 
     color: #fff;
     font-size: 1.2rem;
+}
+
+.credit span a {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.credit span {
+    justify-self: end;
+}
+
+.forms-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 100vh;
+}
+
+.input-container {
+    background-color: #fff;
+    row-gap: 2rem;
+    margin: 1rem 0rem 4rem 0rem;
+}
+
+.hero-section {
+    font-size: 2.5rem;
+    line-height: 3.1rem;
+    font-weight: bold;
+
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+    color: black;
+    background-color: lightgray;
+
+    padding: 3rem 5rem 0rem 5rem;
+}
+
+section > p:nth-child(2) {
+    margin-top: 2rem;
+}
+
+section > p:nth-child(3) {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.input-container > p:first-child {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: black;
+
+    grid-column: 1/-1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.input-container > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-section {
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.08);
+}
+
+.input-container {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 0rem 5rem 0rem 5rem;
+}
+
+div > input {
+    width: 35rem;
+    border: solid #e5e7eb 2px;
+    border-radius: 5px;
+    height: 3rem;
+    margin-top: 0.5rem;
+}
+
+div > label {
+    font-size: 1.3rem;
+}
+
+div > input:required {
+    border: solid #e5e7eb 2px;
+}
+
+div > input:focus {
+    border: solid lightblue 2px !important;
+}
+
+div > input:valid {
+    border: solid green 2px;
+}
+
+div > input:invalid {
+    border: solid red 2px;
+}
+
+.login-section {
+    margin: 5rem 0rem 0rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.btn-create {
+    text-align: center;
+    font-family: inherit;
+    background-color: #596d48;
+    height: 5rem;
+    width: 20rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+}
+
+.login-account {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.login {
+    text-decoration: none;
+}
+
+.login:visited {
+    text-decoration: none;
+    color: #596d48;
 }
